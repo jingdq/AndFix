@@ -107,8 +107,11 @@ usage: apkpatch -f <new> -t <old> -o <output> -k <keystore> -p <***> -a <alias> 
  -n,--name <name>       patch name.
  -o,--out <dir>         output dir.
  -p,--kpassword <***>   keystore password.
- -t,--to <loc>          old Apk file path.
+ -t,--to <loc>          old Apk file path. 
 ```
+example:
+apkpatch.sh -f app-2.0.apk -t app-1.0.apk -o ./ -k /yourpath/key.jks -p 123456 -a hotfix -e 123456
+
 
 * merge .apatch files:
 
